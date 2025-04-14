@@ -8,7 +8,7 @@ while cond < 10:
         continue
     if cond % 5 == 0:
         break
-    print(cond)
+    print(cond) # 1 2 4
     
 while True:
     var = input("Enter a number: ")
@@ -22,11 +22,11 @@ while True:
 
 var = [1, 2, 3]
 for one in var:
-    print(one)
+    print(one)  # 1 2 3
     
 var = [(1,1), (2,2), (3,3)]
 for (first, second) in var:
-    print(first, second)
+    print(first, second) # 1 1 2 2 3 3
 
 sum = 0
 var = range(1, 11)
@@ -34,4 +34,4 @@ for one in var:
     if (one % 2 == 0):
         continue
     sum = sum + one
-print(sum)
+print(sum)  # 25

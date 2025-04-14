@@ -1,24 +1,24 @@
-variable = "%d books" % 3
-print(variable)
+variable = "%d books" % 3 # %d는 정수형을 의미합니다.
+print(variable) #3 books
 
-variable = "%s books" % "3"
-print(variable)
+variable = "%s books" % "3" # %s는 문자열을 의미합니다.
+print(variable) #3 books
 
-variable = "%s books" % 3
-print(variable)
+variable = "%s books" % 3 
+print(variable) # 3 books
 
-variable = "I have {0} {1}".format(3, "books")
-print(variable)
+variable = "I have {0} {1}".format(3, "books") # format 메서드를 사용하여 문자열을 포맷합니다.
+print(variable) # I have 3 books
 
 number = 3
-variable = f"I have {number+2} books"
-print(variable)
+variable = f"I have {number+2} books" # f-string을 사용하여 문자열을 포맷합니다.
+print(variable) # I have 5 books
 
-variable = "I have %d apples and %d books" % (number, number+2)
-print(variable)
+variable = "I have %d apples and %d books" % (number, number+2) # %d는 정수형을 의미합니다.
+print(variable) # I have 3 apples and 5 books
 
-variable = "The error rates : %d%%" % 55
-print(variable)
+variable = "The error rates : %d%%" % 55 # %%는 %를 출력하기 위한 이스케이프 문자입니다.
+print(variable) # The error rates : 55%
 
 # 오른쪽 정렬하여 10칸의 공간을 확보하고 문자열 "Hello"를 출력
 variable = "%10s" % "Hello"

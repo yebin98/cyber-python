@@ -10,9 +10,9 @@ def processing(data):
 
 data = 10
 result = processing(data)
-print(val)
-print(data)
-print(result)
+print(val) # 10
+print(data) # 10
+print(result)   # 10000
 
 ####################
 # Call by Reference
@@ -21,4 +21,4 @@ def processing(data):
 
 val = [1, 2, 3]
 processing(val)
-print(val)
+print(val)  # [100, 2, 3]

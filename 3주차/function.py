@@ -3,9 +3,9 @@
 
 # 파라미터도 없고 리턴값도 없음
 def hello():
-    print("Hello World")
+    print("Hello World") 
 
-hello()
+hello() # Hello Worl
 
 # 파라미터와 리턴값이 있음
 def add(x, y):
@@ -16,10 +16,10 @@ def add(x, y):
 val_x = 1
 val_y = 2
 val_sum = add(val_x, val_y)
-print(val_sum)
+print(val_sum) # 3
 
 # 호출할 때 매개변수(인자)의 이름을 지정할 수 있음 
-print(add(y = val_y, x = val_x))
+print(add(y = val_y, x = val_x)) # 1    2   3
 
 # default value (매개변수에 초기값)을 이용하는 함수
 def add(x, y = 10):
@@ -27,8 +27,8 @@ def add(x, y = 10):
     print(y)
     return x + y
 
-print(add(1, 2))
-print(add(1))
+print(add(1, 2)) # 1   2   3
+print(add(1))   # 1   10  11
 
 # 매개변수의 개수가 가변적인 함수
 def sum(*values):
@@ -38,15 +38,15 @@ def sum(*values):
     return result
 
 result = sum(1, 2, 3)
-print(result)
+print(result) # 6
 
 # 여러개의 값을 반환하는 함수
 def calc(a, b):
     return a + b, a - b 
 
 result = calc(1,3)
-print(result)
+print(result) # (4, -2)
 
 x, y = calc(1,3)
-print(x)
-print(y)
+print(x) # 4
+print(y) # -2
